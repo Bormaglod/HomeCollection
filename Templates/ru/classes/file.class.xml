@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Файл" guid="962BB12E-6ED7-40CB-B389-1696A88895C0" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Расположение" type="url" method="file"/>
+	<field name="Папка" type="url" method="folder" group="true"/>
+	<field name="Тип файла" type="text" group="true"/>
+	<field name="Размер" type="number" suffix="байт" thousands="true" />
+	<field name="Создан" type="date" time="true" category="Даты"/>
+	<field name="Изменён" type="date" time="true" category="Даты"/>
+	<field name="Доступ" type="date" time="true" category="Даты"/>
+	<field name="Только для чтения" type="boolean" category="Атрибуты"/>
+	<field name="Скрытый" type="boolean" category="Атрибуты"/>
+	<forms>
+		<form name="standard" width="450" height="351" min_width="376" min_height="351">
+			<controls>
+				<label text="Наименование" X="12" Y="12" />
+				<control field="Наименование" X="107" Y="12" anchor="left,top,right" width="323" />
+				<line X="12" Y="38" width="417" anchor="left,top,right" />
+				<label text="Тип файла" X="12" Y="45" />
+				<control field="Тип файла" X="107" Y="45" width="250" />
+				<line X="12" Y="71" width="417" anchor="left,top,right" />
+				<label text="Расположение" X="12" Y="78" />
+				<control field="Расположение" X="107" Y="78" anchor="left,top,right" width="323" />
+				<label text="Папка" X="12" Y="104" />
+				<control field="Папка" X="107" Y="104" anchor="left,top,right" width="323" />
+				<label text="Размер" X="12" Y="130" />
+				<control field="Размер" X="107" Y="130" width="150" />
+				<line X="12" Y="156" width="417" anchor="left,top,right" />
+				<label text="Создан" X="12" Y="163" />
+				<control field="Создан" X="107" Y="163" width="200" />
+				<label text="Изменён" X="12" Y="189" />
+				<control field="Изменён" X="107" Y="189" width="200" />
+				<label text="Доступ" X="12" Y="215" />
+				<control field="Доступ" X="107" Y="215" width="200" />
+				<line X="12" Y="241" width="417" anchor="left,top,right" />
+				<label text="Атрибуты" X="12" Y="248" />
+				<control field="Только для чтения" X="107" Y="248" text="true" />
+				<control field="Скрытый" X="235" Y="248" width="200" text="true"/>
+			</controls>
+		</form>
+	</forms>
+</class>

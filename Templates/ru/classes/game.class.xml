@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Игра" base="Вещь" guid="79E07BEF-AD15-49C2-8EFA-2F9B98FEB8A8" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Жанр" type="reference" ref_guid="F903C5B4-C5CF-481A-B93F-9C9CF38245F0"/>
+	<field name="Издательство" type="reference" ref_guid="8768DC35-591A-48AC-8C05-1CBB0C64E784"/>
+	<field name="Возрастной рейтинг" type="select" values="Без рейтинга;Только для взрослых;От 17 лет;Подросткам 13-19 лет;Для всех;Для детей младшего возраста;Рейтинг ожидается"/>
+	<field name="Платформа" type="select" values="Xbox 360;Xbox;PlayStation 3;PlayStation 2;PlayStation;PSP;Nintendo Wii;Nintendo DS;GameCube;Dreamcast;Game Boy Advance;Game Boy Color;Game Boy;Windows;Mac OS;Linux"/>
+	<field name="Год выпуска" type="number" />
+	<field name="Разработчик" type="reference" ref_guid="0C58A593-895C-40C7-8D4E-DD79198EA8A2"/>
+	<field name="Описание" type="memo"/>
+	<field name="Личный рейтинг" type="raiting" category="Личное"/>
+	<field name="Цена покупки" type="number" decimal="2" category="Личное" />
+	<field name="Дата покупки" type="date" category="Личное"/>
+	<field name="Пройдена" type="boolean" category="Личное"/>
+	<field name="Обложка" type="image"/>
+	<field name="Комментарии" type="memo"/>
+</class>

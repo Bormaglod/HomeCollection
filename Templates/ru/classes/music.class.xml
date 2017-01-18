@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Музыка" base="Вещь" guid="BD8AC4AD-500D-42F9-9BE4-DAB8A6A02366" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Исполнитель" type="reference" ref_guid="3541F87C-692E-4938-A4E7-DC9AC0DB6689" group="true"/>
+	<field name="Год" type="number" group="true" />
+	<field name="Жанр" type="reference" ref_guid="F903C5B4-C5CF-481A-B93F-9C9CF38245F0" group="true"/>
+	<field name="Рейтинг" type="raiting" category="Личное" group="true"/>
+	<field name="Ключевые слова" type="text" category="Личное"/>
+	<field name="Комментарии" type="memo"/>
+</class>

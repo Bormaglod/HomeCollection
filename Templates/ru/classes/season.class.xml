@@ -1,0 +1,6 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Сезон" groupname="true" guid="8B0B0C31-5E23-4B3F-8876-5EFEBF4917B6" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<fieldname expression='concat(" ", "Сезон", Номер)' />
+	<field name="Номер" type="number" />
+	<field name="Эпизоды" type="list" ref_guid="CB604DDE-256F-409B-BF2C-75001E4FAAEF" />
+</class>

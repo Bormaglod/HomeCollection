@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Музыкальный файл" guid="6A58BEEA-2400-4F5E-8752-A23B47D57754" base="Музыка" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Альбом" type="text" />
+	<field name="Расположение" type="url" method="file" category="Личное"/>
+	<field name="Номер дорожки" type="number" />
+	<field name="Продолжительность" type="text" category="Audio" />
+	<field name="Кодек" type="reference" ref_guid="5ACFDC39-E6DF-4F17-9A29-98A0712CE815" category="Audio" />
+	<field name="Скорость потока" type="number" category="Audio" suffix="кбит/с" />
+	<field name="Количество каналов" type="number" category="Audio" />
+	<field name="Частота дискретизации" type="number" category="Audio" suffix="Гц" />
+</class>

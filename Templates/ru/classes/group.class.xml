@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Группа" guid="3541F87C-692E-4938-A4E7-DC9AC0DB6689" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Состав" type="table">
+		<column name="Участник" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" width="150"/>
+		<column name="Роль" auto_size="true"/>
+	</field>
+	<forms>
+		<form name="standard" width="384" height="293" min_width="384" min_height="293">
+			<controls>
+				<label text="Наименование" X="12" Y="12" />
+				<control field="Наименование" X="107" Y="12" anchor="left,top,right" width="257" />
+				<label text="Состав" X="12" Y="38" />
+				<control field="Состав" X="12" Y="62" anchor="left,top,right,bottom" width="352" height="150" />
+			</controls>
+		</form>
+	</forms>
+</class>

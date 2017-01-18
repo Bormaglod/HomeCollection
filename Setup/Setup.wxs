@@ -1,0 +1,61 @@
+﻿<?xml version="1.0"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <?include Variables.wxi?>
+    <Product Id="$(var.ProductCode)"
+        Name="$(var.ProductName)"
+        Language="1049"
+        Version="$(var.ProductVersion)"
+        UpgradeCode="$(var.UpgradeCode)"
+        Manufacturer="$(var.Manufacturer)">
+        <Package Description="#Description"
+            Comments="Comments"
+            InstallerVersion="200"
+            Compressed="yes"/>
+        <!--
+            Source media for the installation. 
+            Specifies a single cab file to be embedded in the installer's .msi. 
+        -->
+        <Media Id="1" Cabinet="contents.cab" EmbedCab="yes" CompressionLevel="high"/>
+        
+        <!-- Installation directory and files are defined in Files.wxs -->
+        <Directory Id="TARGETDIR" Name="SourceDir"/>
+        
+        <Feature Id="Complete"
+                 Title="$(var.ProductName)"
+                 Level="1">
+                 <ComponentRef Id="ProductComponent"/>
+                 <ComponentRef Id="AddInSideAdaptersComponent"/>
+                 <ComponentRef Id="AddInViewsComponent"/>
+                 <ComponentRef Id="ContractsComponent"/>
+                 <ComponentRef Id="HostSideAdaptersComponent"/>
+                 <ComponentRef Id="ResourcesComponent"/>
+                 <ComponentRef Id="TemplatesComponent"/>
+                 <ComponentRef Id="TemplatesSetEnComponent"/>
+                 <ComponentRef Id="TemplatesSetRuComponent"/>
+                 <ComponentRef Id="TemplateClassesEn"/>
+                 <ComponentRef Id="TemplateClassesRu"/>
+                 <ComponentRef Id="ApplicationShortcut"/>
+                 <ComponentRef Id="AddInsComponent" />
+            <Feature Id="AddIns"
+                     Title="AddIns"
+                     Level="1">
+                     <ComponentRef Id="AudioInfoComponent" />
+                     <ComponentRef Id="FileInfoComponent" />
+            </Feature>
+        </Feature>
+        
+        <!-- 
+            Using the Wix UI library
+ 
+            WixUI_InstallDir does not allow the user to choose 
+            features but adds a dialog to let the user choose a 
+            directory where the product will be installed
+        -->
+        <Property Id="WIXUI_INSTALLDIR">INSTALLDIR</Property>
+        <UIRef Id="WixUI_Mondo"/>
+        <PropertyRef Id="NETFRAMEWORK40FULL"/>
+        <Condition Message="This setup requires the .NET Framework 4.0 to be installed. Please download and install the framework by going to http://www.microsoft.com/en-us/download/details.aspx?id=17851">
+            <![CDATA[Installed OR NETFRAMEWORK40FULL]]>
+        </Condition>
+    </Product>
+</Wix>

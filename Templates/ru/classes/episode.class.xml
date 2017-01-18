@@ -1,0 +1,8 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Эпизод" groupname="true" guid="CB604DDE-256F-409B-BF2C-75001E4FAAEF" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<fieldname expression='concat(" ", "Эпизод", Номер)' />
+	<field name="Номер" type="number" />
+	<field name="Дата показа" type="date" />
+	<field name="Расположение" type="url" />
+	<field name="Описание" type="memo" />
+</class>

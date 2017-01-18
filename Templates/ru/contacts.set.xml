@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config title="Контакты" language="ru" >
+	<category name="Контакты">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\contact.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Справочники">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\country.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\address.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\people.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\role.class.xml" encoding="UTF-8"/>
+	</category>
+</config>

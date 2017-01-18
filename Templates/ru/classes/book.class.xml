@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Книга" guid="D29AAC8E-852E-4AB8-A687-0B3E5B9BEF37" base="Издание" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Авторы" type="list" group="true" reference="Люди"/>
+	<field name="Переводчики" type="list" category="Издательство" reference="Люди"/>
+	<field name="Переплет" type="select" values="Твердый переплет;Мягкий переплет;Электронная книга"/>
+	<field name="Подзаголовок" type="text"/>
+	<field name="ISBN#" type="text" category="Издательство"/>
+	<field name="Страницы" type="number" category="Издательство"/>
+	<field name="Редакция" type="number" category="Издательство"/>
+	<field name="Серия" type="text" category="Классификация"/>
+	<field name="Номер серии" type="number" category="Классификация"/>
+	<field name="Подписано" type="boolean" category="Личное"/>
+	<field name="Прочитана" type="boolean" category="Личное"/>
+	<field name="Рейтинг" type="raiting" category="Личное" group="true"/>
+</class>

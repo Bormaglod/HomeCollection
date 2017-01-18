@@ -1,0 +1,21 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="People" groupname="true" guid="6AFFA8A4-3C12-4C43-993E-5DA5A7BF6DDF">
+	<fieldname expression="concat1(&quot; &quot;, FirstName, LastName)" />
+	<field name="FirstName" type="text"/>
+	<field name="LastName" type="text"/>
+	<field name="Role" type="list" reference="Role" group="true"/>
+	<field name="Photo" type="image"/>
+	<forms>
+		<form name="standard" width="478" height="192" min_width="478" min_height="192">
+			<controls>
+				<label text="Full name" X="152" Y="12" />
+				<control field="Name" X="222" Y="12" anchor="left,top,right" width="236" />
+				<label text="First name" X="152" Y="38" />
+				<control field="FirstName" X="222" Y="38" anchor="left,top,right" width="236" />
+				<label text="Last name" X="152" Y="64" />
+				<control field="LastName" X="222" Y="64" anchor="left,top,right" width="236" />
+				<control field="Photo" X="12" Y="12" width="134" height="134" />
+			</controls>
+		</form>
+	</forms>
+</class>

@@ -1,0 +1,17 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Издательство" guid="8768DC35-591A-48AC-8C05-1CBB0C64E784" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Город" type="text"/>
+	<field name="Адрес" type="text"/>
+	<forms>
+		<form name="standard" width="384" height="165" min_width="384" min_height="165">
+			<controls>
+				<label text="Наименование" X="12" Y="12"/>
+				<control field="Наименование" X="107" Y="12" anchor="left,top,right" width="257"/>
+				<label text="Город" X="12" Y="38"/>
+				<control field="Город" X="107" Y="38" anchor="left,top,right" width="257"/>
+				<label text="Адрес" X="12" Y="64"/>
+				<control field="Адрес" X="107" Y="64" anchor="left,top,right" width="257"/>
+			</controls>
+		</form>
+	</forms>
+</class>

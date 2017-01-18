@@ -1,0 +1,13 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Видеофайл" base="Фильм" guid="5EEC01C6-B2A2-4B65-B2DE-03DBA6118D1F" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	
+	<field name="Язык озвучки" type="text" category="Особенности"/>
+	<field name="Язык субтитров" type="text" category="Особенности"/>
+	<field name="Аудио треки" type="text" category="Особенности"/>
+	
+	
+	<field name="Широкоэкроное" type="boolean" category="Особенности"/>
+	<field name="Цветовой режим" type="select" values="Цвет;Чёрно-белое" category="Особенности"/>
+	<field name="Режисерская версия" type="boolean" category="Особенности"/>
+	<field name="Расположение" type="url" method="select" />
+</class>

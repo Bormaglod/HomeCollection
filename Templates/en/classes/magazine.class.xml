@@ -1,0 +1,4 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Magazine" base="Publication" guid="8E10E7A3-696D-494D-A7DC-52112434ED0E">
+	<field name="Magazine number" type="number" category="Publisher" />
+</class>

@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Coin" guid="EBB499E0-DCED-411D-AD35-A533C213D6B7" base="Thing">
+	<field name="Type" type="text" group="true"/>
+	<field name="Year" type="number" group="true" />
+	<field name="Country" type="reference" ref_guid="2FD90456-0B2B-49BA-BACC-4ED43F01AB68" group="true"/>
+	<field name="Assessment" type="select" values="Запечатано-65;Запечатано-60;Новое-65;Новое-60;Почти не использовалось-55;Почти не использовалось-50;Очень хорошо-40;Хорошо-30;Средне-20;Ниже среднего-12;Плохо-4;Очень плохо" group="true"/>
+	<field name="Достоинство" type="text" group="true"/>
+	<field name="Место чеканки" type="text" group="true"/>
+	<field name="Набор монет" type="boolean"/>
+	<field name="Служба оценки" type="select" values="PCGS;NGC;ANACS;ICG;ASA;PCIG;PCI" group="true"/>
+	<field name="Purchase date" type="date" category="Personal"/>
+	<field name="Purchase price" type="number" decimal="2" category="Personal" />
+	<field name="Place" type="text" category="Personal" group="true"/>
+	<field name="'Орел'" type="image"/>
+	<field name="'Решка'" type="image"/>
+	<field name="Comments" type="memo"/>
+</class>

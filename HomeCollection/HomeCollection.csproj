@@ -1,0 +1,390 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{F37CD9E4-01BB-45DA-8CE9-FDF8F04553E0}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>HomeCollection</RootNamespace>
+    <AssemblyName>HomeCollection</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SignAssembly>False</SignAssembly>
+    <DelaySign>False</DelaySign>
+    <RunPostBuildEvent>OnBuildSuccess</RunPostBuildEvent>
+    <AllowUnsafeBlocks>False</AllowUnsafeBlocks>
+    <NoStdLib>False</NoStdLib>
+    <WarningLevel>4</WarningLevel>
+    <TreatWarningsAsErrors>false</TreatWarningsAsErrors>
+    <ApplicationIcon>HomeCollection.ico</ApplicationIcon>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <RegisterForComInterop>False</RegisterForComInterop>
+    <GenerateSerializationAssemblies>Auto</GenerateSerializationAssemblies>
+    <BaseAddress>4194304</BaseAddress>
+    <FileAlignment>4096</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="ComponentFactory.Krypton.Toolkit" />
+    <Reference Include="System" />
+    <Reference Include="System.AddIn">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="WeifenLuo.WinFormsUI.Docking">
+      <HintPath>..\..\..\..\Assembly.Net\WeifenLuo.WinFormsUI.Docking.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Config\Application.cs" />
+    <Compile Include="Config\Configuration.cs" />
+    <Compile Include="Config\FontElement.cs" />
+    <Compile Include="Config\General.cs" />
+    <Compile Include="Config\Main.cs" />
+    <Compile Include="Config\View.cs" />
+    <Compile Include="Controls\DataCard.cs" />
+    <Compile Include="Controls\DataCard.Designer.cs">
+      <DependentUpon>DataCard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\DetailInfoControl.cs" />
+    <Compile Include="Controls\DetailInfoControl.Designer.cs">
+      <DependentUpon>DetailInfoControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FilterItemControl.cs" />
+    <Compile Include="Controls\FilterItemControl.Designer.cs">
+      <DependentUpon>FilterItemControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormImageViewer.cs" />
+    <Compile Include="Controls\FormImageViewer.Designer.cs">
+      <DependentUpon>FormImageViewer.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\FormSelectMultipleObjectData.cs" />
+    <Compile Include="Controls\FormSelectMultipleObjectData.Designer.cs">
+      <DependentUpon>FormSelectMultipleObjectData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageSelect.cs" />
+    <Compile Include="Controls\ImageSelect.Designer.cs">
+      <DependentUpon>ImageSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\ImageSelectBase.cs" />
+    <Compile Include="Controls\ListBoxControl.cs" />
+    <Compile Include="Controls\ListBoxControl.Designer.cs">
+      <DependentUpon>ListBoxControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\SimpleImageSelect.cs" />
+    <Compile Include="Controls\SimpleImageSelect.Designer.cs">
+      <DependentUpon>SimpleImageSelect.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Controls\TableControl.cs" />
+    <Compile Include="Controls\TableControl.Designer.cs">
+      <DependentUpon>TableControl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormAbout.cs" />
+    <Compile Include="FormAbout.Designer.cs">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormClassProperty.cs" />
+    <Compile Include="FormClassProperty.Designer.cs">
+      <DependentUpon>FormClassProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormCollectionList.cs" />
+    <Compile Include="FormCollectionList.Designer.cs">
+      <DependentUpon>FormCollectionList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfig.cs" />
+    <Compile Include="FormConfig.Designer.cs">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormConfigure.cs" />
+    <Compile Include="FormConfigure.Designer.cs">
+      <DependentUpon>FormConfigure.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormDataAbstract.cs" />
+    <Compile Include="FormDataObject.cs" />
+    <Compile Include="FormDataObject.Designer.cs">
+      <DependentUpon>FormDataObject.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFieldProperty.cs" />
+    <Compile Include="FormFieldProperty.Designer.cs">
+      <DependentUpon>FormFieldProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFilter.cs" />
+    <Compile Include="FormFilter.Designer.cs">
+      <DependentUpon>FormFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormFolder.cs" />
+    <Compile Include="FormFolder.Designer.cs">
+      <DependentUpon>FormFolder.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormGroupList.cs" />
+    <Compile Include="FormGroupList.Designer.cs">
+      <DependentUpon>FormGroupList.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormPlugins.cs" />
+    <Compile Include="FormPlugins.Designer.cs">
+      <DependentUpon>FormPlugins.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormProperty.cs" />
+    <Compile Include="FormProperty.Designer.cs">
+      <DependentUpon>FormProperty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormSelectClass.cs" />
+    <Compile Include="FormSelectClass.Designer.cs">
+      <DependentUpon>FormSelectClass.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormStartPage.cs" />
+    <Compile Include="FormStartPage.Designer.cs">
+      <DependentUpon>FormStartPage.cs</DependentUpon>
+    </Compile>
+    <Compile Include="FormUserData.cs" />
+    <Compile Include="FormUserData.Designer.cs">
+      <DependentUpon>FormUserData.cs</DependentUpon>
+    </Compile>
+    <Compile Include="HistoryPoint.cs" />
+    <Compile Include="MainForm.cs" />
+    <Compile Include="MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Plugins.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Resources.Designer.cs">
+      <DependentUpon>Resources.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Strings.en.Designer.cs">
+      <DependentUpon>Strings.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Controls\DataCard.resx">
+      <DependentUpon>DataCard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DetailInfoControl.en.resx">
+      <DependentUpon>DetailInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\DetailInfoControl.resx">
+      <DependentUpon>DetailInfoControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FilterItemControl.resx">
+      <DependentUpon>FilterItemControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormImageViewer.resx">
+      <DependentUpon>FormImageViewer.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormSelectMultipleObjectData.en.resx">
+      <DependentUpon>FormSelectMultipleObjectData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\FormSelectMultipleObjectData.resx">
+      <DependentUpon>FormSelectMultipleObjectData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageSelect.en.resx">
+      <DependentUpon>ImageSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ImageSelect.resx">
+      <DependentUpon>ImageSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListBoxControl.en.resx">
+      <DependentUpon>ListBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\ListBoxControl.resx">
+      <DependentUpon>ListBoxControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\SimpleImageSelect.resx">
+      <DependentUpon>SimpleImageSelect.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Controls\TableControl.resx">
+      <DependentUpon>TableControl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.en.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormAbout.resx">
+      <DependentUpon>FormAbout.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClassProperty.en.resx">
+      <DependentUpon>FormClassProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormClassProperty.resx">
+      <DependentUpon>FormClassProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCollectionList.en.resx">
+      <DependentUpon>FormCollectionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormCollectionList.resx">
+      <DependentUpon>FormCollectionList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig.en.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfig.resx">
+      <DependentUpon>FormConfig.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfigure.en.resx">
+      <DependentUpon>FormConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormConfigure.resx">
+      <DependentUpon>FormConfigure.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataObject.en.resx">
+      <DependentUpon>FormDataObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormDataObject.resx">
+      <DependentUpon>FormDataObject.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFieldProperty.en.resx">
+      <DependentUpon>FormFieldProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFieldProperty.resx">
+      <DependentUpon>FormFieldProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFilter.en.resx">
+      <DependentUpon>FormFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFilter.resx">
+      <DependentUpon>FormFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder.en.resx">
+      <DependentUpon>FormFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormFolder.resx">
+      <DependentUpon>FormFolder.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGroupList.en.resx">
+      <DependentUpon>FormGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormGroupList.resx">
+      <DependentUpon>FormGroupList.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlugins.en.resx">
+      <DependentUpon>FormPlugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormPlugins.resx">
+      <DependentUpon>FormPlugins.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProperty.en.resx">
+      <DependentUpon>FormProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormProperty.resx">
+      <DependentUpon>FormProperty.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectClass.en.resx">
+      <DependentUpon>FormSelectClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormSelectClass.resx">
+      <DependentUpon>FormSelectClass.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStartPage.en.resx">
+      <DependentUpon>FormStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormStartPage.resx">
+      <DependentUpon>FormStartPage.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserData.en.resx">
+      <DependentUpon>FormUserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="FormUserData.resx">
+      <DependentUpon>FormUserData.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.en.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Components\ComponentLib\ComponentLib.Controls\ComponentLib.Controls.csproj">
+      <Project>{B45ADB28-2EB3-4CFA-B240-82D8F58BEB22}</Project>
+      <Name>ComponentLib.Controls</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Components\ComponentLib\ComponentLib.Core\ComponentLib.Core.csproj">
+      <Project>{23E004DD-EEF4-4759-BF89-3AE0EC1DB6D8}</Project>
+      <Name>ComponentLib.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Components\ComponentLib\ComponentLib.Data\ComponentLib.Data.csproj">
+      <Project>{36EDCD41-1A04-4EEF-A424-4F53D9DCF7C2}</Project>
+      <Name>ComponentLib.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Components\ComponentLib\ComponentLib.Forms\ComponentLib.Forms.csproj">
+      <Project>{6FA9C69F-C88A-4677-A924-702BE2DB2501}</Project>
+      <Name>ComponentLib.Forms</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\AddIns\HostView\HostView.csproj">
+      <Project>{FE2E5764-EE89-4D25-AE7E-48048A1CCD54}</Project>
+      <Name>HostView</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeCollection.Core\HomeCollection.Core.csproj">
+      <Project>{566C333B-B4BF-45A5-9A1E-EC52A9127B25}</Project>
+      <Name>HomeCollection.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeCollection.Data.Core\HomeCollection.Data.Core.csproj">
+      <Project>{6125856B-7C9E-43F6-AF57-80DAE37C3314}</Project>
+      <Name>HomeCollection.Data.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeCollection.Data\HomeCollection.Data.csproj">
+      <Project>{E743A1E4-BEA7-41EC-AB5C-BD62EE61D782}</Project>
+      <Name>HomeCollection.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeCollection.Properties\HomeCollection.Properties.csproj">
+      <Project>{96CCB52F-DADD-4F82-A53D-2CC16BA7E812}</Project>
+      <Name>HomeCollection.Properties</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Config" />
+    <Folder Include="Controls" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

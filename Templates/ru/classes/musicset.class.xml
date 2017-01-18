@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Музыкальный сборник" guid="4FA271F7-0D22-4AA6-87FF-34D2CBC5109B" base="Музыка" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Носитель" type="select" values="Компакт диск;DVD;Кассета;Винил" group="true"/>
+	<field name="Дорожки" type="table">
+		<column name="Название"/>
+		<column name="Исполнитель" ref_guid="3541F87C-692E-4938-A4E7-DC9AC0DB6689"/>
+		<column name="Длина"/>
+	</field>
+	<field name="Дата покупки" type="date" category="Личное"/>
+	<field name="Цена покупки" type="number" decimal="2" category="Личное" />
+	<field name="Обложка" type="image"/>
+</class>

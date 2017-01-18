@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Book" base="Publication" guid="82FAB9EA-D695-4092-BC02-13F9D7273D06">
+	<field name="Autors" type="list" reference="People" group="true"/>
+	<field name="Translators" type="list" reference="People" category="Publisher"/>
+	<field name="Binding" type="select" values="Hard;Soft;Electronic"/>
+	<field name="Subtitle" type="text"/>
+	<field name="ISBN#" type="text" category="Publisher"/>
+	<field name="Pages" type="number" category="Publisher" />
+	<field name="Edition" type="number" category="Publisher" />
+	<field name="Series" type="text" category="Classification"/>
+	<field name="Series number" type="number" category="Classification" />
+	<field name="Signed" type="boolean" category="Personal"/>
+	<field name="Read" type="boolean" category="Personal"/>
+	<field name="Raiting" type="raiting" category="Personal" group="true"/>
+</class>

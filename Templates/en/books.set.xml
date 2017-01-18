@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<config title="Books collection" language="en">
+	<category name="General">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\thing.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Printed matter">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\publication.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\book.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\magazine.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Reference books">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\people.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\role.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\publisher.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\genre.class.xml" encoding="UTF-8"/>
+	</category>
+</config>

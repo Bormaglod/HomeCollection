@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config title="Коллекция монет" language="ru">
+	<category name="Обшая">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\thing.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Справочники">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\country.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Монеты">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\coin.class.xml" encoding="UTF-8"/>
+	</category>
+</config>

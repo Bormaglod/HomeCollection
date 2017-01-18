@@ -1,0 +1,17 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Сертификация" guid="6710D394-F2D5-417C-B4CB-3B954C56579E" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Страна" type="reference" reference="Страна"/>
+	<field name="Описание" type="memo" />
+	<forms>
+		<form name="standard" width="384" height="233" min_width="384" min_height="233">
+			<controls>
+				<label text="Наименование" X="12" Y="12" />
+				<control field="Наименование" X="107" Y="12" anchor="left,top,right" width="257" />
+				<label text="Страна" X="12" Y="38" />
+				<control field="Страна" X="107" Y="38" anchor="left,top,right" width="257" />
+				<label text="Описание" X="12" Y="64" />
+				<control field="Описание" X="107" Y="64" anchor="left,top,right,bottom" width="257" height="86" />
+			</controls>
+		</form>
+	</forms>
+</class>

@@ -1,0 +1,16 @@
+Required
+- Microsoft .NET Framework 4.0
+    - http://www.microsoft.com/en-us/download/details.aspx?id=17718 (автономный установщик)
+    - http://www.microsoft.com/en-us/download/details.aspx?id=17851 (web-установщик)
+- Krypton Toolkit 4.4.0
+    - http://www.componentfactory.com/product?id=3
+- db4objects 8.0 for .NET 4.0
+    - http://www.db4o.com
+- ComponentLib
+    - http://sourceforge.net/projects/component-lib
+- Mvp.Xml Project
+    - http://mvpxml.codeplex.com
+- DockPanel Suite
+    - http://sourceforge.net/projects/dockpanelsuite
+- dotnetfireball
+    - http://dotnetfireball.codeplex.com

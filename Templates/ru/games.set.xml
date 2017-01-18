@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config title="Коллекция игр" language="ru">
+	<category name="Обшая">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\thing.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Справочники">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\developer.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\genre.class.xml" encoding="UTF-8"/>
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\publisher.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Игры">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\game.class.xml" encoding="UTF-8"/>
+	</category>
+</config>

@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Game" base="Thing" guid="8E010D3E-8A9F-4ABF-A44B-40E3C256A0C9">
+	<field name="Genre" type="reference" ref_guid="B2D99FB0-1A5A-41FF-A761-CFD1B400946A"/>
+	<field name="Publisher" type="reference" ref_guid="C757FB34-1AC0-4B82-9A20-C02AA869ADB8"/>
+	<field name="Возрастной рейтинг" type="select" values="Без рейтинга;Только для взрослых;От 17 лет;Подросткам 13-19 лет;Для всех;Для детей младшего возраста;Рейтинг ожидается"/>
+	<field name="Платформа" type="select" values="Xbox 360;Xbox;PlayStation 3;PlayStation 2;PlayStation;PSP;Nintendo Wii;Nintendo DS;GameCube;Dreamcast;Game Boy Advance;Game Boy Color;Game Boy;Windows;Mac OS;Linux"/>
+	<field name="Год выпуска" type="number" />
+	<field name="Developer" type="reference" ref_guid="5A54B948-50FB-4830-BC49-094E701201B0"/>
+	<field name="Description" type="memo"/>
+	<field name="Personal raiting" type="raiting" category="Personal"/>
+	<field name="Цена покупки" type="number" decimal="2" category="Personal" />
+	<field name="Дата покупки" type="date" category="Personal"/>
+	<field name="Пройдена" type="boolean" category="Personal"/>
+	<field name="Cover" type="image"/>
+	<field name="Comments" type="memo"/>
+</class>

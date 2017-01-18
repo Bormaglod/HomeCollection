@@ -1,0 +1,178 @@
+﻿<?xml version="1.0"?>
+<Wix xmlns="http://schemas.microsoft.com/wix/2006/wi">
+    <?include Variables.wxi?>
+    <Fragment>
+        <DirectoryRef Id="TARGETDIR">
+            <Directory Id="ProgramFilesFolder" Name="PFiles">
+                <Directory Id="INSTALLDIR" Name="$(var.ProductName)" FileSource="$(var.ConfigDir)">
+                    <Component Id="ProductComponent" Guid="654E0809-8539-4E34-B7C1-C74465B89ACC" DiskId="1">
+                        <File Id="HomeCollection" Name="HomeCollection.exe" />
+                        <File Id="HomeCollectionConfig" Name="HomeCollection.exe.config" />
+                        <File Id="ComponentLibControls" Name="ComponentLib.Controls.dll" />
+                        <File Id="ComponentLibCore" Name="ComponentLib.Core.dll" />
+                        <File Id="ComponentLibData" Name="ComponentLib.Data.dll" />
+                        <File Id="ComponentLibForms" Name="ComponentLib.Forms.dll" />
+                        <File Id="Db4o" Name="Db4objects.Db4o.dll" />
+                        <File Id="Db4oLinq" Name="Db4objects.Db4o.Linq.dll" />
+                        <File Id="CodeEditor" Name="Fireball.CodeEditor.dll" />
+                        <File Id="SyntaxFiles" Name="Fireball.CodeEditor.SyntaxFiles.dll" />
+                        <File Id="FireballCore" Name="Fireball.Core.dll" />
+                        <File Id="SyntaxDocument" Name="Fireball.SyntaxDocument.dll" />
+                        <File Id="FireballWin32" Name="Fireball.Win32.dll" />
+                        <File Id="FireballWindowsForms" Name="Fireball.Windows.Forms.dll" />
+                        <File Id="Core" Name="HomeCollection.Core.dll" />
+                        <File Id="DataCore" Name="HomeCollection.Data.Core.dll" />
+                        <File Id="Data" Name="HomeCollection.Data.dll" />
+                        <File Id="Properties" Name="HomeCollection.Properties.dll" />
+                        <File Id="HostView" Name="HostView.dll" />
+                        <File Id="MonoReflection" Name="Mono.Reflection.dll" />
+                        <File Id="Xml" Name="Mvp.Xml.dll" />
+                        <File Id="Docking" Name="WeifenLuo.WinFormsUI.Docking.dll" />
+                        <File Id="LicenseFile" Name="license.rtf" Source="license.rtf" />
+                        <File Id="KryptonToolkit" Name="ComponentFactory.Krypton.Toolkit.dll" Source="C:\Program Files (x86)\Component Factory\Krypton Toolkit 4.4.0\Bin\ComponentFactory.Krypton.Toolkit.dll" />
+                    </Component>
+                    <Directory Id="AddIns" Name="AddIns" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\HomeCollection\bin\Debug\AddIns">
+                        <Component Id="AddInsComponent" Guid="CA85BDE2-3607-4DE8-B32F-06B31C15FDA9" DiskId="1">
+                            <File Id="ReadMeAddIns" Name="readme.txt" />
+                        </Component>
+                        <Directory Id="Audio.Information" Name="Audio.Information">
+                            <Component Id="AudioInfoComponent" Guid="EED63739-261C-4A0A-BCFE-C1D293CD80CF" DiskId="1">
+                                <File Id="Audio.Information.dll" Name="Audio.Information.dll" Source="..\HomeCollection\bin\Debug\AddIns\Audio.Information\Audio.Information.dll" />
+                                <File Id="taglib_sharp.dll" Name="taglib-sharp.dll" Source="..\HomeCollection\bin\Debug\AddIns\Audio.Information\taglib-sharp.dll" />
+                            </Component>
+                        </Directory>
+                        <Directory Id="File.Information" Name="File.Information">
+                            <Component Id="FileInfoComponent" Guid="DB2BEB9A-D4C5-419E-9096-88F17C120B4A" DiskId="1">
+                                <File Id="File.Information.dll" Name="File.Information.dll" Source="..\HomeCollection\bin\Debug\AddIns\File.Information\File.Information.dll" />
+                            </Component>
+                        </Directory>
+                    </Directory>
+                    <Directory Id="AddInSideAdapters" Name="AddInSideAdapters" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\HomeCollection\bin\Debug\AddInSideAdapters">
+                        <Component Id="AddInSideAdaptersComponent" Guid="A17156AC-FAD9-4E8B-B95F-3D3EA12AB417" DiskId="1">
+                            <File Id="DataAddInAdapter" Name="DataAddInAdapter.dll" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="AddInViews" Name="AddInViews" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\HomeCollection\bin\Debug\AddInViews">
+                        <Component Id="AddInViewsComponent" Guid="204367F5-B8CF-44B9-8AC2-43F771419AF0" DiskId="1">
+                            <File Id="DataView" Name="DataView.dll" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="Contracts" Name="Contracts" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\HomeCollection\bin\Debug\Contracts">
+                        <Component Id="ContractsComponent" Guid="E0B3C6D9-65A5-48E9-AC15-E67C4988D11D" DiskId="1">
+                            <File Id="DataContract" Name="DataContract.dll" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="HostSideAdapters" Name="HostSideAdapters" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\HomeCollection\bin\Debug\HostSideAdapters">
+                        <Component Id="HostSideAdaptersComponent" Guid="158C92C7-8E14-4E88-976D-A55D39B077DE" DiskId="1">
+                            <File Id="HostAdapter" Name="HostAdapter.dll" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="en" Name="en" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\HomeCollection\bin\Debug\en">
+                        <Component Id="ResourcesComponent" Guid="2A13617E-003B-44AD-895C-1BE2FB6EACDD" DiskId="1">
+                            <File Id="ComponentLibControlsRes" Name="ComponentLib.Controls.resources.dll" />
+                            <File Id="ComponentLibDataRes" Name="ComponentLib.Data.resources.dll" />
+                            <File Id="ComponentLibFormsRes" Name="ComponentLib.Forms.resources.dll" />
+                            <File Id="HomeCollectionCoreRes" Name="HomeCollection.Core.resources.dll" />
+                            <File Id="HomeCollectionDataCoreRes" Name="HomeCollection.Data.Core.resources.dll" />
+                            <File Id="HomeCollectionDataRes" Name="HomeCollection.Data.resources.dll" />
+                            <File Id="HomeCollectionPropertiesRes" Name="HomeCollection.Properties.resources.dll" />
+                            <File Id="HomeCollectionRes" Name="HomeCollection.resources.dll" />
+                        </Component>
+                    </Directory>
+                    <Directory Id="Templates" Name="Templates" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\Templates">
+                        <Component Id="TemplatesComponent" Guid="F0FA32ED-74E7-4CAD-9EBB-1E32C04F13F2" DiskId="1">
+                            <File Id="TemplateConfig" Name="config.xsd" />
+                        </Component>
+                        <Directory Id="TemplatesEn" Name="en" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\Templates\en">
+                            <Component Id="TemplatesSetEnComponent" Guid="A278A497-9CA1-4216-82FE-BBC49565EB0E" DiskId="1">
+                                <File Id="BooksSetEn" Name="books.set.xml" />
+                                <File Id="ContactsSetEn" Name="contacts.set.xml" />
+                                <File Id="FilesSetEn" Name="files.set.xml" />
+                                <File Id="GamesSetEn" Name="games.set.xml" />
+                                <File Id="MoneySetEn" Name="money.set.xml" />
+                                <File Id="MusicSetEn" Name="music.set.xml" />
+                                <File Id="VideoSetEn" Name="video.set.xml" />
+                            </Component>
+                            <Directory Id="TemplatesEnClasses" Name="classes">
+                                <Component Id="TemplateClassesEn" Guid="F3B14078-6642-40D8-8F45-EF1B27B50208" DiskId="1">
+                                    <File Id="address.class.xml" Name="address.class.xml" Source="..\Templates\en\classes\address.class.xml" />
+                                    <File Id="book.class.xml" Name="book.class.xml" Source="..\Templates\en\classes\book.class.xml" />
+                                    <File Id="codec.class.xml" Name="codec.class.xml" Source="..\Templates\en\classes\codec.class.xml" />
+                                    <File Id="coin.class.xml" Name="coin.class.xml" Source="..\Templates\en\classes\coin.class.xml" />
+                                    <File Id="contact.class.xml" Name="contact.class.xml" Source="..\Templates\en\classes\contact.class.xml" />
+                                    <File Id="country.class.xml" Name="country.class.xml" Source="..\Templates\en\classes\country.class.xml" />
+                                    <File Id="datamedium.class.xml" Name="datamedium.class.xml" Source="..\Templates\en\classes\datamedium.class.xml" />
+                                    <File Id="developer.class.xml" Name="developer.class.xml" Source="..\Templates\en\classes\developer.class.xml" />
+                                    <File Id="file.class.xml" Name="file.class.xml" Source="..\Templates\en\classes\file.class.xml" />
+                                    <File Id="film.class.xml" Name="film.class.xml" Source="..\Templates\en\classes\film.class.xml" />
+                                    <File Id="game.class.xml" Name="game.class.xml" Source="..\Templates\en\classes\game.class.xml" />
+                                    <File Id="genre.class.xml" Name="genre.class.xml" Source="..\Templates\en\classes\genre.class.xml" />
+                                    <File Id="group.class.xml" Name="group.class.xml" Source="..\Templates\en\classes\group.class.xml" />
+                                    <File Id="magazine.class.xml" Name="magazine.class.xml" Source="..\Templates\en\classes\magazine.class.xml" />
+                                    <File Id="music.class.xml" Name="music.class.xml" Source="..\Templates\en\classes\music.class.xml" />
+                                    <File Id="musicfile.class.xml" Name="musicfile.class.xml" Source="..\Templates\en\classes\musicfile.class.xml" />
+                                    <File Id="musicset.class.xml" Name="musicset.class.xml" Source="..\Templates\en\classes\musicset.class.xml" />
+                                    <File Id="people.class.xml" Name="people.class.xml" Source="..\Templates\en\classes\people.class.xml" />
+                                    <File Id="publication.class.xml" Name="publication.class.xml" Source="..\Templates\en\classes\publication.class.xml" />
+                                    <File Id="publisher.class.xml" Name="publisher.class.xml" Source="..\Templates\en\classes\publisher.class.xml" />
+                                    <File Id="role.class.xml" Name="role.class.xml" Source="..\Templates\en\classes\role.class.xml" />
+                                    <File Id="sertification.class.xml" Name="sertification.class.xml" Source="..\Templates\en\classes\sertification.class.xml" />
+                                    <File Id="studio.class.xml" Name="studio.class.xml" Source="..\Templates\en\classes\studio.class.xml" />
+                                    <File Id="thing.class.xml" Name="thing.class.xml" Source="..\Templates\en\classes\thing.class.xml" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                        <Directory Id="TemplatesRu" Name="ru" FileSource="C:\Projects\SharpDevelop Projects\HomeCollection\Templates\ru">
+                            <Component Id="TemplatesSetRuComponent" Guid="AF529586-A3F0-40C7-B570-D94AC6DD6D49" DiskId="1">
+                                <File Id="BooksSetRu" Name="books.set.xml" />
+                                <File Id="ContactsSetRu" Name="contacts.set.xml" />
+                                <File Id="FilesSetRu" Name="files.set.xml" />
+                                <File Id="GamesSetRu" Name="games.set.xml" />
+                                <File Id="MoneySetRu" Name="money.set.xml" />
+                                <File Id="MusicSetRu" Name="music.set.xml" />
+                                <File Id="VideoSetRu" Name="video.set.xml" />
+                            </Component>
+                            <Directory Id="TemplatesRuClasses" Name="classes">
+                                <Component Id="TemplateClassesRu" Guid="5C534E77-EC03-49DC-959B-73D0E1535405" DiskId="1">
+                                    <File Id="classes.address.class.xml" Name="address.class.xml" Source="..\Templates\ru\classes\address.class.xml" />
+                                    <File Id="classes.book.class.xml" Name="book.class.xml" Source="..\Templates\ru\classes\book.class.xml" />
+                                    <File Id="classes.codec.class.xml" Name="codec.class.xml" Source="..\Templates\ru\classes\codec.class.xml" />
+                                    <File Id="classes.coin.class.xml" Name="coin.class.xml" Source="..\Templates\ru\classes\coin.class.xml" />
+                                    <File Id="classes.contact.class.xml" Name="contact.class.xml" Source="..\Templates\ru\classes\contact.class.xml" />
+                                    <File Id="classes.country.class.xml" Name="country.class.xml" Source="..\Templates\ru\classes\country.class.xml" />
+                                    <File Id="classes.datamedium.class.xml" Name="datamedium.class.xml" Source="..\Templates\ru\classes\datamedium.class.xml" />
+                                    <File Id="classes.developer.class.xml" Name="developer.class.xml" Source="..\Templates\ru\classes\developer.class.xml" />
+                                    <File Id="episode.class.xml" Name="episode.class.xml" Source="..\Templates\ru\classes\episode.class.xml" />
+                                    <File Id="classes.file.class.xml" Name="file.class.xml" Source="..\Templates\ru\classes\file.class.xml" />
+                                    <File Id="classes.film.class.xml" Name="film.class.xml" Source="..\Templates\ru\classes\film.class.xml" />
+                                    <File Id="film_publishing.class.xml" Name="film_publishing.class.xml" Source="..\Templates\ru\classes\film_publishing.class.xml" />
+                                    <File Id="filmfile.class.xml" Name="filmfile.class.xml" Source="..\Templates\ru\classes\filmfile.class.xml" />
+                                    <File Id="classes.game.class.xml" Name="game.class.xml" Source="..\Templates\ru\classes\game.class.xml" />
+                                    <File Id="classes.genre.class.xml" Name="genre.class.xml" Source="..\Templates\ru\classes\genre.class.xml" />
+                                    <File Id="classes.group.class.xml" Name="group.class.xml" Source="..\Templates\ru\classes\group.class.xml" />
+                                    <File Id="labels.class.xml" Name="labels.class.xml" Source="..\Templates\ru\classes\labels.class.xml" />
+                                    <File Id="languages.class.xml" Name="languages.class.xml" Source="..\Templates\ru\classes\languages.class.xml" />
+                                    <File Id="classes.magazine.class.xml" Name="magazine.class.xml" Source="..\Templates\ru\classes\magazine.class.xml" />
+                                    <File Id="classes.music.class.xml" Name="music.class.xml" Source="..\Templates\ru\classes\music.class.xml" />
+                                    <File Id="classes.musicfile.class.xml" Name="musicfile.class.xml" Source="..\Templates\ru\classes\musicfile.class.xml" />
+                                    <File Id="classes.musicset.class.xml" Name="musicset.class.xml" Source="..\Templates\ru\classes\musicset.class.xml" />
+                                    <File Id="classes.people.class.xml" Name="people.class.xml" Source="..\Templates\ru\classes\people.class.xml" />
+                                    <File Id="classes.publisher.class.xml" Name="publisher.class.xml" Source="..\Templates\ru\classes\publisher.class.xml" />
+                                    <File Id="publishing.class.xml" Name="publishing.class.xml" Source="..\Templates\ru\classes\publishing.class.xml" />
+                                    <File Id="ratio.class.xml" Name="ratio.class.xml" Source="..\Templates\ru\classes\ratio.class.xml" />
+                                    <File Id="classes.role.class.xml" Name="role.class.xml" Source="..\Templates\ru\classes\role.class.xml" />
+                                    <File Id="screen_sizes.class.xml" Name="screen_sizes.class.xml" Source="..\Templates\ru\classes\screen_sizes.class.xml" />
+                                    <File Id="season.class.xml" Name="season.class.xml" Source="..\Templates\ru\classes\season.class.xml" />
+                                    <File Id="classes.sertification.class.xml" Name="sertification.class.xml" Source="..\Templates\ru\classes\sertification.class.xml" />
+                                    <File Id="classes.studio.class.xml" Name="studio.class.xml" Source="..\Templates\ru\classes\studio.class.xml" />
+                                    <File Id="classes.thing.class.xml" Name="thing.class.xml" Source="..\Templates\ru\classes\thing.class.xml" />
+                                    <File Id="translate.class.xml" Name="translate.class.xml" Source="..\Templates\ru\classes\translate.class.xml" />
+                                </Component>
+                            </Directory>
+                        </Directory>
+                    </Directory>
+                </Directory>
+            </Directory>
+        </DirectoryRef>
+    </Fragment>
+</Wix>

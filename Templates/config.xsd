@@ -1,0 +1,133 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="config">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element maxOccurs="unbounded" name="category">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element maxOccurs="unbounded" name="class">
+                                <xs:complexType>
+                                    <xs:sequence minOccurs="0">
+                                        <xs:element minOccurs="0" name="fieldname" maxOccurs="1">
+                                            <xs:complexType>
+                                                <xs:attribute name="expression" type="xs:string" use="required" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" maxOccurs="unbounded" name="field">
+                                            <xs:complexType>
+                                                <xs:sequence minOccurs="0">
+                                                    <xs:element maxOccurs="unbounded" name="column">
+                                                        <xs:complexType>
+                                                            <xs:attribute name="name" type="xs:string" use="required" />
+                                                            <xs:attribute name="ref_guid" type="xs:string" use="optional" />
+                                                            <xs:attribute name="reference" type="xs:string" use="optional" />
+                                                            <xs:attribute name="width" type="xs:unsignedShort" use="optional" />
+                                                            <xs:attribute name="min_width" type="xs:unsignedShort" use="optional" />
+                                                            <xs:attribute name="visible" type="xs:string" use="optional" />
+                                                            <xs:attribute name="resizable" type="xs:string" use="optional" />
+                                                            <xs:attribute name="frozen" type="xs:string" use="optional" />
+                                                            <xs:attribute name="div_width" type="xs:unsignedByte" use="optional" />
+                                                            <xs:attribute name="auto_size" type="xs:string" use="optional" />
+                                                            <xs:attribute name="fill_weight" type="xs:unsignedShort" use="optional" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                                <xs:attribute name="name" type="xs:string" use="required" />
+                                                <xs:attribute name="type" type="xs:string" use="required" />
+                                                <xs:attribute name="category" type="xs:string" use="optional" />
+                                                <xs:attribute name="order" type="xs:unsignedByte" use="optional" />
+                                                <xs:attribute name="default" type="xs:string" use="optional" />
+                                                <xs:attribute name="group" type="xs:boolean" use="optional" />
+                                                <xs:attribute name="ref_guid" type="xs:string" use="optional" />
+                                                <xs:attribute name="decimal" type="xs:unsignedByte" use="optional" />
+                                                <xs:attribute name="values" type="xs:string" use="optional" />
+                                                <xs:attribute name="method" type="xs:string" use="optional" />
+                                                <xs:attribute name="thousands" type="xs:boolean" use="optional" />
+                                                <xs:attribute name="suffix" type="xs:string" use="optional" />
+                                                <xs:attribute name="time" type="xs:boolean" use="optional" />
+                                                <xs:attribute name="comment" type="xs:string" use="optional" />
+                                                <xs:attribute name="expression" type="xs:string" use="optional" />
+                                                <xs:attribute name="maximum" type="xs:decimal" use="optional" />
+                                                <xs:attribute name="minimum" type="xs:decimal" use="optional" />
+                                                <xs:attribute name="increment" type="xs:int" use="optional" />
+                                                <xs:attribute name="prefix" type="xs:string" use="optional" />
+                                                <xs:attribute name="reference" type="xs:string" use="optional" />
+                                                <xs:attribute name="columns" type="xs:string" use="optional" />
+                                            </xs:complexType>
+                                        </xs:element>
+                                        <xs:element minOccurs="0" name="forms" maxOccurs="1">
+                                            <xs:complexType>
+                                                <xs:sequence>
+                                                    <xs:element name="form" minOccurs="0" maxOccurs="unbounded">
+                                                        <xs:complexType>
+                                                            <xs:sequence>
+                                                                <xs:element name="controls">
+                                                                    <xs:complexType>
+                                                                        <xs:sequence>
+                                                                            <xs:choice maxOccurs="unbounded">
+                                                                                <xs:element name="label">
+                                                                                    <xs:complexType>
+                                                                                        <xs:attribute name="text" type="xs:string" use="required" />
+                                                                                        <xs:attribute name="X" type="xs:unsignedShort" use="required" />
+                                                                                        <xs:attribute name="Y" type="xs:unsignedShort" use="required" />
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:element name="control">
+                                                                                    <xs:complexType>
+                                                                                        <xs:attribute name="field" type="xs:string" use="required" />
+                                                                                        <xs:attribute name="X" type="xs:unsignedShort" use="required" />
+                                                                                        <xs:attribute name="Y" type="xs:unsignedShort" use="required" />
+                                                                                        <xs:attribute name="anchor" type="xs:string" use="optional" />
+                                                                                        <xs:attribute name="width" type="xs:unsignedShort" use="optional" />
+                                                                                        <xs:attribute name="height" type="xs:unsignedShort" use="optional" />
+                                                                                        <xs:attribute name="text" type="xs:boolean" use="optional" />
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                                <xs:element name="line">
+                                                                                    <xs:complexType>
+                                                                                        <xs:attribute name="X" type="xs:unsignedShort" use="required" />
+                                                                                        <xs:attribute name="Y" type="xs:unsignedShort" use="required" />
+                                                                                        <xs:attribute name="width" type="xs:unsignedShort" use="required" />
+                                                                                        <xs:attribute name="anchor" type="xs:string" use="required" />
+                                                                                    </xs:complexType>
+                                                                                </xs:element>
+                                                                            </xs:choice>
+                                                                        </xs:sequence>
+                                                                    </xs:complexType>
+                                                                </xs:element>
+                                                            </xs:sequence>
+                                                            <xs:attribute name="name" type="xs:string" use="required" />
+                                                            <xs:attribute name="width" type="xs:unsignedShort" use="required" />
+                                                            <xs:attribute name="height" type="xs:unsignedShort" use="required" />
+                                                            <xs:attribute name="min_width" type="xs:unsignedShort" use="required" />
+                                                            <xs:attribute name="min_height" type="xs:unsignedShort" use="required" />
+                                                        </xs:complexType>
+                                                    </xs:element>
+                                                </xs:sequence>
+                                            </xs:complexType>
+                                        </xs:element>
+                                    </xs:sequence>
+                                    <xs:attribute name="name" type="xs:string" use="required" />
+                                    <xs:attribute name="guid" type="xs:string" use="required" />
+                                    <xs:attribute name="creating" type="xs:boolean" use="optional" />
+                                    <xs:attribute name="groupname" type="xs:boolean" use="optional" />
+                                    <xs:attribute name="base_guid" type="xs:string" use="optional" />
+                                    <xs:attribute name="base" type="xs:string" use="optional" />
+                                </xs:complexType>
+                            </xs:element>
+                        </xs:sequence>
+                        <xs:attribute name="name" type="xs:string" use="required" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:sequence>
+            <xs:attribute name="title" type="xs:string" use="required" />
+            <xs:attribute name="author" type="xs:string" use="optional" />
+            <xs:attribute name="license" type="xs:string" use="optional" />
+            <xs:attribute name="category" type="xs:string" use="optional" />
+            <xs:attribute name="email" type="xs:string" use="optional" />
+            <xs:attribute name="comment" type="xs:string" use="optional" />
+            <xs:attribute name="language" type="xs:string" use="optional" />
+        </xs:complexType>
+    </xs:element>
+</xs:schema>

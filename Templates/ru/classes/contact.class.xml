@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Контакты" base="Люди" guid="572DC54C-B98D-4988-8474-3AFEFF9B8165" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Рабочий телефон 1" type="text"/>
+	<field name="Рабочий телефон 2" type="text"/>
+	<field name="Сотовый телефон 1" type="text"/>
+	<field name="Сотовый телефон 2" type="text"/>
+	<field name="Домашний телефон" type="text"/>
+	<field name="Организация" type="text"/>
+	<field name="Эл. почта" type="text"/>
+</class>

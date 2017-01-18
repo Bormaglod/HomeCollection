@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Music" base="Thing" guid="8B6719FF-6A8B-4A0C-B7B4-7CA58D5D0623">
+	<field name="Исполнитель" type="reference" ref_guid="E6829604-8AC8-4A60-ACE6-24671C030983" group="true"/>
+	<field name="Year" type="number" group="true" />
+	<field name="Genre" type="reference" ref_guid="B2D99FB0-1A5A-41FF-A761-CFD1B400946A" group="true"/>
+	<field name="Raiting" type="raiting" category="Personal" group="true"/>
+	<field name="Ключевые слова" type="text" category="Personal"/>
+	<field name="Comments" type="memo"/>
+</class>

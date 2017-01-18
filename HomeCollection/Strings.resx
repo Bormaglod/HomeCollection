@@ -1,0 +1,252 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="CurrentSchema" xml:space="preserve">
+    <value>CurrentSchema.xml</value>
+  </data>
+  <data name="DefaultSchema" xml:space="preserve">
+    <value>DefaultSchema.xml</value>
+  </data>
+  <data name="HomeCollection" xml:space="preserve">
+    <value>Home collection</value>
+  </data>
+  <data name="BaseTemplate" xml:space="preserve">
+    <value>Базовый шаблон</value>
+  </data>
+  <data name="TemplateCollection" xml:space="preserve">
+    <value>Шаблоны элементов коллекции</value>
+  </data>
+  <data name="CategoryDefault" xml:space="preserve">
+    <value>Общее</value>
+  </data>
+  <data name="Delete" xml:space="preserve">
+    <value>Удаление</value>
+  </data>
+  <data name="ConfirmDeleteRecord" xml:space="preserve">
+    <value>Удаление записи может привести к потере данных, которые ссылаются на данную запись. Вы действительно хотите удалить запись?</value>
+  </data>
+  <data name="ConfirmDeleteField" xml:space="preserve">
+    <value>Удаление атрибута приведет к потере данные. Вы действительно хотите удалить атрибут?</value>
+  </data>
+  <data name="ConfirmDeleteClass" xml:space="preserve">
+    <value>Удаление шаблона приведет к удалению шаблонов, которые зависят от удаляемого. Также будут потеряны данные, основанные на удаляемом шаблоне. Вы действительно хотите удалить шаблон?</value>
+  </data>
+  <data name="AllObjects" xml:space="preserve">
+    <value>Все '{0}'</value>
+  </data>
+  <data name="WithoutFilter" xml:space="preserve">
+    <value>(Нет)</value>
+  </data>
+  <data name="ConfirmDeleteFolder" xml:space="preserve">
+    <value>Вы действительно хотите удалить папку '{0}'?</value>
+  </data>
+  <data name="Today" xml:space="preserve">
+    <value>Сегодня:</value>
+  </data>
+  <data name="LangChangedTitle" xml:space="preserve">
+    <value>Изменен язык приложения</value>
+  </data>
+  <data name="LangChangedContent" xml:space="preserve">
+    <value>Язык интерфейса приложения изменен. Это изменение вступит в силу при следующем запуске приложения.</value>
+  </data>
+  <data name="LangChangedCheck" xml:space="preserve">
+    <value>Не показывать больше это сообщение.</value>
+  </data>
+  <data name="TemplateNotExist" xml:space="preserve">
+    <value>Шаблон (или атрибуты шаблона) ссылается на отсутствующий шаблон и импортирован быть не может.</value>
+  </data>
+  <data name="Open" xml:space="preserve">
+    <value>Открыть</value>
+  </data>
+  <data name="Error" xml:space="preserve">
+    <value>Ошибка</value>
+  </data>
+  <data name="UniqueNameFolder" xml:space="preserve">
+    <value>Наименование папки должно быть уникальным.</value>
+  </data>
+  <data name="UnknownNameFolder" xml:space="preserve">
+    <value>Необходимо указать наименование папки.</value>
+  </data>
+  <data name="NotSelectedClassInFolder" xml:space="preserve">
+    <value>Необходимо выбрать хотя бы один шаблон, объекты которого будут содержаться в папке.</value>
+  </data>
+  <data name="ReguiredFileName" xml:space="preserve">
+    <value>Необходимо вести имя файла.</value>
+  </data>
+  <data name="Filters" xml:space="preserve">
+    <value>Фильтры</value>
+  </data>
+  <data name="ConfirmDeleteFilter" xml:space="preserve">
+    <value>Вы действительно хотите удалить фильтр '{0}'?</value>
+  </data>
+  <data name="Import" xml:space="preserve">
+    <value>Импорт</value>
+  </data>
+  <data name="ImportData" xml:space="preserve">
+    <value>Импорт данных</value>
+  </data>
+  <data name="AnyClass" xml:space="preserve">
+    <value>&lt;Любой класс&gt;</value>
+  </data>
+  <data name="AnyField" xml:space="preserve">
+    <value>&lt;Любое поле&gt;</value>
+  </data>
+  <data name="File" xml:space="preserve">
+    <value>Файл</value>
+  </data>
+  <data name="Folder" xml:space="preserve">
+    <value>Папка</value>
+  </data>
+  <data name="URL" xml:space="preserve">
+    <value>URL</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Наименование</value>
+  </data>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="WebPage" xml:space="preserve">
+    <value>Web-страница</value>
+  </data>
+  <data name="Copyright" xml:space="preserve">
+    <value>Copyright</value>
+  </data>
+  <data name="Template" xml:space="preserve">
+    <value>Шаблон</value>
+  </data>
+  <data name="Version" xml:space="preserve">
+    <value>Версия</value>
+  </data>
+  <data name="ButtonPlugin" xml:space="preserve">
+    <value>Получить данные</value>
+  </data>
+  <data name="ErrorOpen" xml:space="preserve">
+    <value>Ошибка при открытии файла {0}.</value>
+  </data>
+  <data name="DataBackuped" xml:space="preserve">
+    <value>Данные сохранены</value>
+  </data>
+  <data name="Backup" xml:space="preserve">
+    <value>Сохранение</value>
+  </data>
+  <data name="DataClear" xml:space="preserve">
+    <value>База данных должна быть очищена прежде, чем будет осуществлен импорт данных.</value>
+  </data>
+</root>

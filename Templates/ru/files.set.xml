@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config title="Коллекция файлов" language="ru">
+	<category name="Файл">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\file.class.xml" encoding="UTF-8"/>
+	</category>
+</config>

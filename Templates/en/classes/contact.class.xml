@@ -1,0 +1,10 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Contact" base="People" guid="14DEB93D-2016-4B3C-BD59-246BB1A4ECBA">
+	<field name="Work telephone 1" type="text"/>
+	<field name="Work telephone 2" type="text"/>
+	<field name="Mobile telephone 1" type="text"/>
+	<field name="Mobile telephone 2" type="text"/>
+	<field name="Home telephone" type="text"/>
+	<field name="organization" type="text"/>
+	<field name="e-mail" type="text"/>
+</class>

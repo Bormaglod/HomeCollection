@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Publication" creating="false" guid="A231A471-201C-4E85-BF0C-3D5745DFF068" base="Thing">
+	<field name="Year publishing" type="number" category="Publisher" group="true"/>
+	<field name="Publisher" type="reference" category="Publisher" group="true" reference="Publisher"/>
+	<field name="Editor" type="reference" reference="People"/>
+	<field name="Genre" type="list" category="Classification" group="true" reference="Genre"/>
+	<field name="Purchase price" type="number" decimal="2"/>
+	<field name="Purchase date" type="date"/>
+	<field name="Year of sending for the press" type="number" category="Publisher"/>
+	<field name="Language" type="text" category="Publisher"/>
+	<field name="State" type="select" category="Classification" values="Excellent;Good;Satisfactory;Bad"/>
+	<field name="Keywords" type="text" category="Classification"/>
+	<field name="Cover" type="image"/>
+	<field name="Comments" type="memo"/>
+</class>

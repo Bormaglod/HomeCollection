@@ -1,0 +1,25 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Издание фильма" groupname="true" guid="C75D4086-FB43-4027-B3E4-BB02CB619645" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Расположение" type="url" />
+	
+	<!--Общее-->
+	<field name="Продолжительность" type="number" suffix="мин." />
+	<field name="Штрих-код" type="text" />
+	<field name="Формат" type="select" values="NTSC;PAL;SECAM" />
+	<field name="Количество" type="number" />
+	<field name="Тип носителя" type="reference" ref_guid="BC063408-C74C-4998-A0BB-92DAAD987122" />
+	<field name="Соотношение сторон" type="reference" ref_guid="3150EED5-49A0-4ED2-8D43-0126E950B532" />
+	<field name="Разрешение" type="reference" ref_guid="F0069A96-DC94-49C6-9877-3AD2E958A373" />
+	<field name="Видео кодек" type="reference" ref_guid="5ACFDC39-E6DF-4F17-9A29-98A0712CE815" />
+	<field name="Скорость потока" type="number" suffix="кбит/с" />
+	<field name="Размер файла" type="number" suffix="Мбайт" thousands="true" />
+	<field name="Субтитры" type="list" ref_guid="7FC7C597-FEAD-4887-9335-3B61F1F3B1F3" />
+	<field name="Аудио потоки" type="table">
+		<column name="Кодек" ref_guid="5ACFDC39-E6DF-4F17-9A29-98A0712CE815" />
+		<column name="Каналов" />
+		<column name="Язык" ref_guid="7FC7C597-FEAD-4887-9335-3B61F1F3B1F3" />
+	</field>
+	<field name="Дата покупки" type="date" category="Личное"/>
+	<field name="Цена покупки" type="number" decimal="2" category="Личное" />
+	<field name="Сериал" type="list" ref_guid="8B0B0C31-5E23-4B3F-8876-5EFEBF4917B6" />
+</class>

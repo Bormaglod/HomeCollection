@@ -1,0 +1,453 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="kryptonLabel2.Location" type="System.Drawing.Point, System.Drawing">
+    <value>206, 28</value>
+  </data>
+  <data name="kryptonLabel2.Size" type="System.Drawing.Size, System.Drawing">
+    <value>54, 20</value>
+  </data>
+  <data name="kryptonLabel2.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel2.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel2.Values.Text" xml:space="preserve">
+    <value>minutes</value>
+  </data>
+  <data name="numericIntervalBackup.Location" type="System.Drawing.Point, System.Drawing">
+    <value>149, 28</value>
+  </data>
+  <data name="checkSaveBackup.Size" type="System.Drawing.Size, System.Drawing">
+    <value>144, 20</value>
+  </data>
+  <data name="checkSaveBackup.Text" xml:space="preserve">
+    <value>Create a backup every</value>
+  </data>
+  <data name="checkSaveBackup.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkSaveBackup.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="checkSaveBackup.Values.Text" xml:space="preserve">
+    <value>Create a backup every</value>
+  </data>
+  <data name="checkBeginLastFile.Size" type="System.Drawing.Size, System.Drawing">
+    <value>277, 20</value>
+  </data>
+  <data name="checkBeginLastFile.Text" xml:space="preserve">
+    <value>Always load the last opened collection on start</value>
+  </data>
+  <data name="checkBeginLastFile.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="checkBeginLastFile.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="checkBeginLastFile.Values.Text" xml:space="preserve">
+    <value>Always load the last opened collection on start</value>
+  </data>
+  <data name="groupOpenSave.Text" xml:space="preserve">
+    <value>Open/Save</value>
+  </data>
+  <data name="groupOpenSave.Values.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupOpenSave.Values.Heading" xml:space="preserve">
+    <value>Open/Save</value>
+  </data>
+  <data name="groupOpenSave.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="labelCatFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 0</value>
+  </data>
+  <data name="labelCatFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 41</value>
+  </data>
+  <data name="labelCatFont.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelCatFont.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="labelCatFont.Values.Text" xml:space="preserve">
+    <value>Font name</value>
+  </data>
+  <data name="kryptonLabel8.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 41</value>
+  </data>
+  <data name="kryptonLabel8.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel8.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel8.Values.Text" xml:space="preserve">
+    <value>Category Name</value>
+  </data>
+  <data name="buttonChooseFontCat.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonChooseFontCat.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="buttonChooseFontCat.Values.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="labelValueFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 0</value>
+  </data>
+  <data name="labelValueFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 41</value>
+  </data>
+  <data name="labelValueFont.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelValueFont.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="labelValueFont.Values.Text" xml:space="preserve">
+    <value>Font name</value>
+  </data>
+  <data name="kryptonLabel9.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 41</value>
+  </data>
+  <data name="kryptonLabel9.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel9.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel9.Values.Text" xml:space="preserve">
+    <value>Attribute Value</value>
+  </data>
+  <data name="buttonChooseFontValue.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonChooseFontValue.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="buttonChooseFontValue.Values.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="labelAttrFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 0</value>
+  </data>
+  <data name="labelAttrFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 41</value>
+  </data>
+  <data name="labelAttrFont.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelAttrFont.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="labelAttrFont.Values.Text" xml:space="preserve">
+    <value>Font name</value>
+  </data>
+  <data name="kryptonLabel7.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 41</value>
+  </data>
+  <data name="kryptonLabel7.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel7.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel7.Values.Text" xml:space="preserve">
+    <value>Attribute Name</value>
+  </data>
+  <data name="buttonChooseFontAttr.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonChooseFontAttr.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="buttonChooseFontAttr.Values.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="labelNameFont.Location" type="System.Drawing.Point, System.Drawing">
+    <value>96, 0</value>
+  </data>
+  <data name="labelNameFont.Size" type="System.Drawing.Size, System.Drawing">
+    <value>275, 41</value>
+  </data>
+  <data name="labelNameFont.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="labelNameFont.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="labelNameFont.Values.Text" xml:space="preserve">
+    <value>Font name</value>
+  </data>
+  <data name="kryptonLabel4.Size" type="System.Drawing.Size, System.Drawing">
+    <value>96, 41</value>
+  </data>
+  <data name="kryptonLabel4.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel4.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel4.Values.Text" xml:space="preserve">
+    <value>Table font</value>
+  </data>
+  <data name="buttonChooseFont.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonChooseFont.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="buttonChooseFont.Values.Text" xml:space="preserve">
+    <value>Select...</value>
+  </data>
+  <data name="groupFonts.Text" xml:space="preserve">
+    <value>Fonts</value>
+  </data>
+  <data name="groupFonts.Values.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupFonts.Values.Heading" xml:space="preserve">
+    <value>Fonts</value>
+  </data>
+  <data name="groupFonts.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel3.Size" type="System.Drawing.Size, System.Drawing">
+    <value>58, 20</value>
+  </data>
+  <data name="kryptonLabel3.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel3.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel3.Values.Text" xml:space="preserve">
+    <value>Interface</value>
+  </data>
+  <data name="comboLang.Location" type="System.Drawing.Point, System.Drawing">
+    <value>66, 6</value>
+  </data>
+  <data name="groupLanguages.Text" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="groupLanguages.Values.Description" xml:space="preserve">
+    <value />
+  </data>
+  <data name="groupLanguages.Values.Heading" xml:space="preserve">
+    <value>Languages</value>
+  </data>
+  <data name="groupLanguages.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="butonCancel.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="butonCancel.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOugAA
+        DroBFb820gAAAntJREFUOE+lk9tLE1Acx33qDymEKJGuRBSmFTqdt1CDWZi0hhheMi0mtJl4KV2aOi8z
+        cy5Fo9TCCLrYhcyHXiy2vGsqtek2uwyJom326WzOqWgv9XDgnIfP93LO+QUAAf+z1sH25kbpfJve9Lnd
+        4JhvbbbNG5psdr3OYWuoMc1qShMsV4s2rTZcI2DV1UY5eu6Y3e/7YPgVGJ/Du154+wT3m0d8adHxUZ1/
+        fkMBa7028mt3x7R7sB/62uC+BjrL4HYxGNRwrxrX64fYtdcmZnIyo5ZFvAmsDTVR37razW6jcH1pgLul
+        AiyB1kJovgQ6JVRlw60SXE+7sGqKzNPpcq+IV8B+o27QPfAMem9Cu4A8oF6AjQLU5kGlgMvS4XKqOCtx
+        deuZyVAM+gVsupoFBh6LqKolRy+YK8CsJbBIAWoBK2VwLk4k1DFzVr7gF5ir1tjp7xFRL24AnoL8ZMhN
+        giwBp0lElSqmTifb/QKz5SU2XnRCReYqRx+YJ8DseEiXgjwcTh6CpnImTyTY/AKWYtUCvR1QICD1akcf
+        eEaAKWEgOwBxO0XFK0wkxaxU+KTMGXI/aIXrorenoyeqx3EZTD4ISftAGiQqxOLUFjMqCR3yJ5hSpEjn
+        CvMtru4WKEwTbqFLS+YD43ezGL6VRUUUP+rLmEpJtAzuCRIOvmf0bMaPx8aYL2RMO9vrIU9cWvwuEXcH
+        vyODcB4O5FeqhO+1pXyQHZs0BgfGrPlIy4cRSVi0OUNudjaIH1hXjLuqAGelip8VKhY0Kg+Mcdtm0XNl
+        ANcN03DY/ugx6VHTeFyEY0x6xDYiCbWNRoQ4hkL2mkzBgYmm7Vv+Pkz/MtZ/ACdm3U21DLTiAAAAAElF
+        TkSuQmCC
+</value>
+  </data>
+  <data name="butonCancel.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="butonCancel.Values.Text" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="buttonAccept.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonAccept.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="buttonAccept.Values.Text" xml:space="preserve">
+    <value>Apply</value>
+  </data>
+  <data name="buttonOk.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="buttonOk.Values.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8
+        YQUAAAAgY0hSTQAAeiYAAICEAAD6AAAAgOgAAHUwAADqYAAAOpgAABdwnLpRPAAAAAlwSFlzAAAOugAA
+        DroBFb820gAAAbhJREFUOE+lk1kvA2EYhd1h/outWlUqtoTUmmopNTql1tK4oe101WEIjWVciqX2SGyx
+        BpG4VEuF3yD+hOrxdRJNUKFx8V2e8573ec+XBCDpP+9f4ujghA10KzVC3UKF9yN1QgYNy9WC5dCEnj0G
+        KqGYTShBfaBK6Dtow/QjB/7aAeOGDoUjuc4/JdAuVQrmfSMmH3zwP3jRutmIIl6BPI80JWZgvmBKu07p
+        jq8X0SxWCtHIEyEvxkMecXIBJw8r3NkpsRXM54yy84R+Ya8sYLbr+z9MCCyhe9eA8Xs3xu5dYNYboPTl
+        hHNdElEsGvScGco6j5ufR4MsJkND0G+owwRWv3pe5e/aoTF65wJ/y6JlTYv8IVlY7syKiUWDjiN9qmm/
+        CdbLXsw8jYAPOmA+MMJyZMJw0A7u1g56VYM8r/Qtx/FZHFuB3tJQZDIsxyZxz7E7J3w3VviCVuhX6qKw
+        IjI289Pkbz0gsCj1nArt283gbmzwXA+gKaAGgRWR2TPiir/1QDVbQpVPFZHIWuiWakFgRaS29B/FcYtE
+        7ksVDMtBYL1mW9OTf/tocYtEYFGSwbRfxQlV+ack776iqTx7uz8oAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="buttonOk.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel6.Size" type="System.Drawing.Size, System.Drawing">
+    <value>98, 16</value>
+  </data>
+  <data name="kryptonLabel6.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel6.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel6.Values.Text" xml:space="preserve">
+    <value>General Settings</value>
+  </data>
+  <data name="tabPageGeneral.Text" xml:space="preserve">
+    <value>General</value>
+  </data>
+  <data name="kryptonLabel1.Size" type="System.Drawing.Size, System.Drawing">
+    <value>82, 16</value>
+  </data>
+  <data name="kryptonLabel1.Values.ExtraText" xml:space="preserve">
+    <value />
+  </data>
+  <data name="kryptonLabel1.Values.ImageTransparentColor" type="System.Drawing.Color, System.Drawing">
+    <value />
+  </data>
+  <data name="kryptonLabel1.Values.Text" xml:space="preserve">
+    <value>View Settings</value>
+  </data>
+  <data name="tabPageView.Text" xml:space="preserve">
+    <value>View</value>
+  </data>
+  <data name="$this.Text" xml:space="preserve">
+    <value>Configure</value>
+  </data>
+</root>

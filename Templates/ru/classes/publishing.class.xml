@@ -1,0 +1,15 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Издание" creating="false" guid="FF0C8D5C-30FB-4B43-9C4C-CF48F402F4E5" base="Вещь" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Год издания" type="number" category="Издательство" group="true"/>
+	<field name="Издательство" type="reference" category="Издательство" group="true" reference="Издательство"/>
+	<field name="Редактор" type="reference" reference="Люди"/>
+	<field name="Жанр" type="list" category="Классификация" group="true" reference="Жанр"/>
+	<field name="Цена покупки" type="number" decimal="2"/>
+	<field name="Дата покупки" type="date"/>
+	<field name="Год сдачи в печать" type="number" category="Издательство"/>
+	<field name="Язык" type="text" category="Издательство"/>
+	<field name="Состояние" type="select" category="Классификация" values="Отличное;Хорошее;Удовлетворительное;Плохое"/>
+	<field name="Ключевые слова" type="text" category="Классификация"/>
+	<field name="Обложка" type="image"/>
+	<field name="Комментарии" type="memo"/>
+</class>

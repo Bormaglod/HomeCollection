@@ -1,0 +1,6 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config title="File collection" language="en">
+	<category name="File">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\file.class.xml" encoding="UTF-8"/>
+	</category>
+</config>

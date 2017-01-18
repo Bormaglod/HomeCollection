@@ -1,0 +1,88 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Фильм" base="Вещь" guid="9E28935E-191C-4653-AA02-52B4EC5F6F19" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<!--Общее-->
+	<field name="Оригинальное название" type="text" group="true" />
+	<field name="Год" type="number" group="true" />
+	<field name="Время" type="number" suffix="мин." />
+	<field name="Рейтинг IMDB" type="raiting" />
+	<field name="Количество голосов (IMDB)" type="number" thousands="true" />
+	<field name="Рейтинг Kinopisk.ru" type="raiting" />
+	<field name="Количество голосов (Kinopoisk.ru)" type="number" thousands="true" />
+	<field name="Личный рейтинг" type="raiting" />
+	<field name="Просмотрен" type="boolean" />
+	<field name="Ищу" type="boolean" />
+	<field name="Жанр" type="list" ref_guid="F903C5B4-C5CF-481A-B93F-9C9CF38245F0" group="true"/>
+	<field name="Страна" type="list" reference="Страна" group="true"/>
+	<field name="Сертификация" type="reference" reference="Сертификация" group="true"/>
+	<field name="Сайты" type="table">
+		<column name="Наименование" />
+		<column name="Адрес" />
+		<column name="Рейтинг" />
+	</field>
+	<field name="Ключевые слова" type="text" category="Личное"/>
+	
+	<!--Другие люди-->
+	<field name="Режисер" type="list" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" group="true"/>
+	<field name="Сценарий" type="list" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" group="true"/>
+	<field name="Композитор" type="list" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" group="true"/>
+	<field name="Продюсер" type="list" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" group="true"/>
+	<field name="Оператор" type="list" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" group="true"/>
+	<field name="Художник" type="list" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" group="true"/>
+	<field name="Монтаж" type="list" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" group="true"/>
+	
+	<!--Описание-->
+	<field name="Сюжет фильма" type="memo"/>
+	<field name="Слоган" type="memo" />
+	<field name="Бюджет" type="number" thousands="true" prefix="$" category="Описание" />
+	<field name="Премьера (мир)" type="date" category="Описание" />
+	<field name="Премьера (РФ)" type="date" category="Описание" />
+	
+	<!--Прочее-->
+	<field name="Студия" type="list" ref_guid="61C14C04-F027-4C99-8589-B91D90B23538" group="true" />
+	<field name="Дата добавления" type="date" category="Прочее" />
+	<field name="Дата просмотра" type="date" category="Прочее" />
+	<field name="Метка" type="list" ref_guid="4A265159-8655-4B58-93E2-26DF66123F57" group="true" />
+	<field name="Перевод" type="reference" ref_guid="760BB556-896C-489F-B69A-79A4C0D8EE75" group="true"  category="Прочее" />
+	
+	<!--Изображения-->
+	<field name="Обложка" type="image"/>
+	<field name="Кадры" type="image"/>
+	<field name="Постеры" type="image"/>
+	
+	<!--Без категориии-->
+	<field name="Комментарии" type="memo"/>
+	<field name="Роли" type="table">
+		<column name="Роль"/>
+		<column name="Актёр" ref_guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1"/>
+	</field>
+	
+	<!--Издания-->
+	<field name="Издания" type="list" ref_guid="C75D4086-FB43-4027-B3E4-BB02CB619645" />
+
+	<!--<forms>
+		<form name="standard" width="519" height="368" min_width="384" min_height="233">
+			<controls>
+				<page X="12" Y="12" width="487" height="279" anchor="left,top,right,bottom">
+					<label text="Наименование" X="6" Y="6" />
+					<control field="Наименование" X="101" Y="6" anchor="left,top,right" width="372" />
+					<label text="Год" X="6" Y="32" />
+					<control field="Год записи" X="101" Y="32" anchor="left,top" width="120" />
+					<label text="Носитель" X="227" Y="32" />
+					<control field="Носитель" X="294" Y="32" anchor="left,top,right" width="179" />
+					<label text="Жанр" X="6" Y="57" />
+					<control field="Жанр" X="6" Y="79" anchor="left,top" width="215" height="90" small_buttons="true" />
+					<label text="Страна" X="227" Y="57" />
+					<control field="Страна" X="227" Y="79" anchor="left,top,right" width="246" height="90" small_buttons="true" />
+					<page X="5" Y="186" width="150" height="70">
+						<label text="Test" X="6" y="6" />
+					</page>
+					<page name="ddd">
+						<label text="Test2" X="6" y="6" />
+					</page>
+				</page>
+				<page name="Другие люди">
+				</page>
+			</controls>
+		</form>
+	</forms>-->
+</class>

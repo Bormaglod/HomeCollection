@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Музыкальный сборник" guid="C6677522-BC11-4955-B735-0FA9F6DE3C71" base="Music">
+	<field name="Носитель" type="select" values="Компакт диск;DVD;Кассета;Винил" group="true"/>
+	<field name="Tracks" type="table">
+		<column name="Name"/>
+		<column name="Исполнитель" ref_guid="E6829604-8AC8-4A60-ACE6-24671C030983"/>
+		<column name="Length"/>
+	</field>
+	<field name="Дата покупки" type="date" category="Personal"/>
+	<field name="Цена покупки" type="number" decimal="2" category="Personal" />
+	<field name="Cover" type="image"/>
+</class>

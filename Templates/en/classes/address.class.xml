@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Address" guid="D7827C8F-7C4E-499C-89D5-1F8180809488">
+	<fieldname expression="concat(&quot;, &quot;, Country, Zip code, Region, Town, suffix(Street, &quot;st. &quot;), House, Block, Flat)" />
+	<field name="Country" type="reference" reference="Country" />
+	<field name="ZIP code" type="number" />
+	<field name="Region" type="text" />
+	<field name="Town" type="text" />
+	<field name="Street" type="text" />
+	<field name="House" type="number" />
+	<field name="Block" type="text" />
+	<field name="Flat" type="number" />
+</class>

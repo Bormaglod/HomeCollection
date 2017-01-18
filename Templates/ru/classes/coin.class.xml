@@ -1,0 +1,17 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Монета" guid="1FBC358E-203F-4230-B60D-E98C62F14827" base="Вещь" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Тип" type="text" group="true"/>
+	<field name="Год" type="number" group="true" />
+	<field name="Страна" type="reference" ref_guid="AF7F7C0C-BB5C-4DF0-B74F-9B0DBAD467E4" group="true"/>
+	<field name="Оценка" type="select" values="Запечатано-65;Запечатано-60;Новое-65;Новое-60;Почти не использовалось-55;Почти не использовалось-50;Очень хорошо-40;Хорошо-30;Средне-20;Ниже среднего-12;Плохо-4;Очень плохо" group="true"/>
+	<field name="Достоинство" type="text" group="true"/>
+	<field name="Место чеканки" type="text" group="true"/>
+	<field name="Набор монет" type="boolean"/>
+	<field name="Служба оценки" type="select" values="PCGS;NGC;ANACS;ICG;ASA;PCIG;PCI" group="true"/>
+	<field name="Дата покупки" type="date" category="Личное"/>
+	<field name="Цена покупки" type="number" decimal="2" category="Личное" />
+	<field name="Место" type="text" category="Личное" group="true"/>
+	<field name="'Орел'" type="image"/>
+	<field name="'Решка'" type="image"/>
+	<field name="Комментарии" type="memo"/>
+</class>

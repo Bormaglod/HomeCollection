@@ -1,0 +1,11 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Роли" guid="53C1178A-4A68-4814-981A-6AEE5A840600" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<forms>
+		<form name="standard" width="384" height="116" min_width="384" min_height="116">
+			<controls>
+				<label text="Наименование" X="12" Y="12"/>
+				<control field="Наименование" X="107" Y="12" anchor="left,top,right" width="257"/>
+			</controls>
+		</form>
+	</forms>
+</class>

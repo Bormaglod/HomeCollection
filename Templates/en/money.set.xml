@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<config title="Coins collection" language="en">
+	<category name="General">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\thing.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Reference books">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\country.class.xml" encoding="UTF-8"/>
+	</category>
+	<category name="Coins">
+		<xi:include xmlns:xi="http://www.w3.org/2001/XInclude" href="classes\coin.class.xml" encoding="UTF-8"/>
+	</category>
+</config>

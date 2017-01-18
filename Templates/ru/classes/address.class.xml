@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Адрес" guid="28306B39-14EE-405D-A898-E25B6B178E61" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<fieldname expression="concat(&quot;, &quot;, Страна, Индекс, prefix(Область, &quot;обл. &quot;), prefix(Город, &quot;г. &quot;), prefix(Улица, &quot;ул. &quot;), prefix(Дом, &quot;д. &quot;), prefix(Корпус, &quot;корп. &quot;), prefix(Квартира, &quot;кв. &quot;))"/>
+	<field name="Страна" type="reference" reference="Страна"/>
+	<field name="Индекс" type="number" />
+	<field name="Область" type="text"/>
+	<field name="Город" type="text"/>
+	<field name="Улица" type="text"/>
+	<field name="Дом" type="number" />
+	<field name="Корпус" type="text"/>
+	<field name="Квартира" type="number" />
+</class>

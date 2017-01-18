@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="File" guid="DBC90FE7-71A0-4F9D-8AFD-49C1033E6DC5">
+	<field name="Location" type="url" method="file" />
+	<field name="Folder" type="url" method="folder" group="true"/>
+	<field name="File type" type="text" group="true"/>
+	<field name="Size" type="number" suffix="byte" thousands="true" />
+	<field name="Created" type="date" time="true" category="Dates"/>
+	<field name="Modified" type="date" time="true" category="Dates"/>
+	<field name="Accessed" type="date" time="true" category="Dates"/>
+	<field name="Read-only" type="boolean" category="Attributes"/>
+	<field name="Hidden" type="boolean" category="Attributes"/>
+	<forms>
+		<form name="standard" width="450" height="351" min_width="376" min_height="351">
+			<controls>
+				<label text="Name" X="12" Y="12" />
+				<control field="Name" X="107" Y="12" anchor="left,top,right" width="323" />
+				<line X="12" Y="38" width="417" anchor="left,top,right" />
+				<label text="File type" X="12" Y="45" />
+				<control field="File type" X="107" Y="45" width="250" />
+				<line X="12" Y="71" width="417" anchor="left,top,right" />
+				<label text="Location" X="12" Y="78" />
+				<control field="Location" X="107" Y="78" anchor="left,top,right" width="323" />
+				<label text="Folder" X="12" Y="104" />
+				<control field="Folder" X="107" Y="104" anchor="left,top,right" width="323" />
+				<label text="Size" X="12" Y="130" />
+				<control field="Size" X="107" Y="130" width="150" />
+				<line X="12" Y="156" width="417" anchor="left,top,right" />
+				<label text="Created" X="12" Y="163" />
+				<control field="Created" X="107" Y="163" width="200" />
+				<label text="Modified" X="12" Y="189" />
+				<control field="Modified" X="107" Y="189" width="200" />
+				<label text="Accessed" X="12" Y="215" />
+				<control field="Accessed" X="107" Y="215" width="200" />
+				<line X="12" Y="241" width="417" anchor="left,top,right" />
+				<label text="Attributes" X="12" Y="248" />
+				<control field="Read-only" X="107" Y="248" text="true" />
+				<control field="Hidden" X="235" Y="248" width="200" text="true"/>
+			</controls>
+		</form>
+	</forms>
+</class>

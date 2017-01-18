@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{E743A1E4-BEA7-41EC-AB5C-BD62EE61D782}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <OutputType>Library</OutputType>
+    <RootNamespace>HomeCollection.Data</RootNamespace>
+    <AssemblyName>HomeCollection.Data</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>
+    </TargetFrameworkProfile>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <SignAssembly>True</SignAssembly>
+    <AssemblyOriginatorKeyFile>HomeCollection.Data.snk</AssemblyOriginatorKeyFile>
+    <DelaySign>False</DelaySign>
+    <AssemblyOriginatorKeyMode>File</AssemblyOriginatorKeyMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Db4objects.Db4o">
+      <HintPath>..\..\..\..\Program Files %28x86%29\db4o\db4o-8.0\bin\net-4.0\Db4objects.Db4o.dll</HintPath>
+    </Reference>
+    <Reference Include="Db4objects.Db4o.Linq">
+      <HintPath>..\..\..\..\Program Files %28x86%29\db4o\db4o-8.0\bin\net-4.0\Db4objects.Db4o.Linq.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Attributes\LocalizedCategoryAttribute.cs" />
+    <Compile Include="Attributes\LocalizedDescriptionAttribute.cs" />
+    <Compile Include="Attributes\LocalizedDisplayNameAttribute.cs" />
+    <Compile Include="BaseCollection.cs" />
+    <Compile Include="BooleanDefaultConverter.cs" />
+    <Compile Include="Database.cs" />
+    <Compile Include="DatabaseOpeningEventArgs.cs" />
+    <Compile Include="DataItemEventArgs.cs" />
+    <Compile Include="DataItemsEventArgs.cs" />
+    <Compile Include="DataProperties\Cell.cs" />
+    <Compile Include="DataProperties\ImageData.cs" />
+    <Compile Include="DataProperties\ListData.cs" />
+    <Compile Include="DataProperties\Row.cs" />
+    <Compile Include="DataProperties\TableData.cs" />
+    <Compile Include="DataValue.cs" />
+    <Compile Include="DefaultValue.cs" />
+    <Compile Include="Exceptions\FieldNotFoundException.cs" />
+    <Compile Include="Exceptions\IncorrectFieldException.cs" />
+    <Compile Include="Field.cs" />
+    <Compile Include="FieldModifiedEventArgs.cs" />
+    <Compile Include="FieldProperties\ColumnProperty.cs" />
+    <Compile Include="FieldProperties\DateProperty.cs" />
+    <Compile Include="FieldProperties\ListProperty.cs" />
+    <Compile Include="FieldProperties\NumberProperty.cs" />
+    <Compile Include="FieldProperties\ReferenceProperty.cs" />
+    <Compile Include="FieldProperties\UrlProperty.cs" />
+    <Compile Include="Filter.cs" />
+    <Compile Include="FilterCollection.cs" />
+    <Compile Include="FilterItem.cs" />
+    <Compile Include="Folder.cs" />
+    <Compile Include="FolderCollection.cs" />
+    <Compile Include="ImageCollection.cs" />
+    <Compile Include="ImageReference.cs" />
+    <Compile Include="Information.cs" />
+    <Compile Include="ObjectClass.cs" />
+    <Compile Include="ObjectClassCollection.cs" />
+    <Compile Include="ObjectData.cs" />
+    <Compile Include="ObjectDataCollection.cs" />
+    <Compile Include="ObjectDataEventArgs.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Strings.Designer.cs">
+      <DependentUpon>Strings.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Strings.en.Designer.cs">
+      <DependentUpon>Strings.en.resx</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Components\ComponentLib\ComponentLib.Core\ComponentLib.Core.csproj">
+      <Project>{23E004DD-EEF4-4759-BF89-3AE0EC1DB6D8}</Project>
+      <Name>ComponentLib.Core</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Components\ComponentLib\ComponentLib.Data\ComponentLib.Data.csproj">
+      <Project>{36EDCD41-1A04-4EEF-A424-4F53D9DCF7C2}</Project>
+      <Name>ComponentLib.Data</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\HomeCollection.Data.Core\HomeCollection.Data.Core.csproj">
+      <Project>{6125856B-7C9E-43F6-AF57-80DAE37C3314}</Project>
+      <Name>HomeCollection.Data.Core</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Attributes" />
+    <Folder Include="Exceptions" />
+    <Folder Include="DataProperties" />
+    <Folder Include="FieldProperties" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Strings.en.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.en.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Strings.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Strings.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.Targets" />
+</Project>

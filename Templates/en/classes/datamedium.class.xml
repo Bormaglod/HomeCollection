@@ -1,0 +1,11 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Data medium" guid="BDECE4DD-3E47-4242-B2C4-BDE7F358597C">
+	<forms>
+		<form name="standard" width="384" height="116" min_width="384" min_height="116">
+			<controls>
+				<label text="Name" X="12" Y="12" />
+				<control field="Name" X="58" Y="12" anchor="left,top,right" width="306" />
+			</controls>
+		</form>
+	</forms>
+</class>

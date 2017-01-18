@@ -1,0 +1,5 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Thing" groupname="true" creating="false" guid="77F373E2-4FD4-4D7C-813E-35E2EC58B394">
+	<field name="Одолжена" type="boolean" category="Personal"/>
+	<field name="Present" type="boolean" category="Personal"/>
+</class>

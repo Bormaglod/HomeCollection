@@ -1,0 +1,11 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<class name="Music file" guid="75DDC4F8-12FD-442E-B7B0-0164A63E48D8" base="Music">
+	<field name="Album" type="text" />
+	<field name="Location" type="url" method="file" category="Personal"/>
+	<field name="Track number" type="number" />
+	<field name="Duration" type="text" category="Audio" />
+	<field name="Codec" type="reference" ref_guid="1BB2E6D4-57B2-478E-A6F9-498407BF3A51" category="Audio" />
+	<field name="Bitrate" type="number" category="Audio" suffix="kbps" />
+	<field name="Channels" type="number" category="Audio" />
+	<field name="Sample rate" type="number" category="Audio" suffix="Hz" />
+</class>

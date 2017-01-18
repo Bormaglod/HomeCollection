@@ -1,0 +1,5 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Вещь" groupname="true" creating="false" guid="3CC33C3F-03D3-4C26-B336-FA6A822D6056" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Одолжена" type="boolean" category="Личное"/>
+	<field name="Подарок" type="boolean" category="Личное"/>
+</class>

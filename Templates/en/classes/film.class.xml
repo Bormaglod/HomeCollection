@@ -1,0 +1,33 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Film" base="Thing" guid="9DEB2F1E-22E7-4DCB-BBA5-DB000AAAE859">
+	<field name="Year of record" type="number" group="true" />
+	<field name="Genre" type="reference" ref_guid="B2D99FB0-1A5A-41FF-A761-CFD1B400946A" group="true"/>
+	<field name="Country" type="reference" reference="Country" group="true"/>
+	<field name="Data medium" type="reference" reference="Data medium" group="true"/>
+	<field name="Sertification" type="reference" reference="Sertification" group="true"/>
+	<field name="Format" type="select" values="NTSC;PAL;SECAM"/>
+	<field name="Roles" type="table">
+		<column name="Role"/>
+		<column name="Actor" ref_guid="6AFFA8A4-3C12-4C43-993E-5DA5A7BF6DDF"/>
+	</field>
+	<field name="Director" type="reference" ref_guid="6AFFA8A4-3C12-4C43-993E-5DA5A7BF6DDF" category="Other people" group="true"/>
+	<field name="Script writer" type="reference" ref_guid="6AFFA8A4-3C12-4C43-993E-5DA5A7BF6DDF" category="Other people" group="true"/>
+	<field name="Composer" type="reference" ref_guid="6AFFA8A4-3C12-4C43-993E-5DA5A7BF6DDF" category="Other people" group="true"/>
+	<field name="Studio" type="reference" ref_guid="CDDCE620-82A1-4568-BD5E-233C5B23C51A" category="Other people" group="true"/>
+	<field name="Язык озвучки" type="text" category="Feature"/>
+	<field name="Язык субтитров" type="text" category="Feature"/>
+	<field name="Аудио треки" type="text" category="Feature"/>
+	<field name="Продолжительность" type="number" category="Feature" />
+	<field name="Соотношение сторон" type="text" category="Feature"/>
+	<field name="Широкоэкроное" type="boolean" category="Feature"/>
+	<field name="Цветовой режим" type="select" values="Цвет;Чёрно-белое" category="Feature"/>
+	<field name="Режисерская версия" type="boolean" category="Feature"/>
+	<field name="Сюжет фильма" type="memo"/>
+	<field name="Personal raiting" type="raiting" category="Personal"/>
+	<field name="IMDB raiting" type="raiting" category="Personal"/>
+	<field name="Purchase date" type="date" category="Personal"/>
+	<field name="Purchase price" type="number" decimal="2" category="Personal" />
+	<field name="Ключевые слова" type="text" category="Personal"/>
+	<field name="Cover" type="image"/>
+	<field name="Comments" type="memo"/>
+</class>

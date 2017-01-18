@@ -1,0 +1,4 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Журнал" guid="472B0B23-6D41-4E08-AE7B-648A4CC0D5D4" base="Издание" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<field name="Номер журнала" type="number" category="Издательство"/>
+</class>

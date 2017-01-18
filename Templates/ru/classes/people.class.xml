@@ -1,0 +1,24 @@
+﻿<?xml version='1.0' encoding='UTF-8'?>
+<class name="Люди" groupname="true" guid="B8E92028-7EF4-4D0A-8CA1-1ABDE2FA88B1" author="Тепляшин С.В." email="sergey-teplyashin@yandex.ru">
+	<fieldname expression='concat1(" ", Фамилия, first(Имя, "."), first(Отчество, "."))'/>
+	<field name="Фамилия" type="text"/>
+	<field name="Имя" type="text"/>
+	<field name="Отчество" type="text"/>
+	<field name="Роль" type="list" group="true" reference="Роли"/>
+	<field name="Фото" type="image"/>
+	<forms>
+		<form name="standard" width="478" height="192" min_width="478" min_height="192">
+			<controls>
+				<label text="Полное имя" X="152" Y="12"/>
+				<control field="Наименование" X="226" Y="12" anchor="left,top,right" width="232"/>
+				<label text="Фамилия" X="152" Y="38"/>
+				<control field="Фамилия" X="226" Y="38" anchor="left,top,right" width="232"/>
+				<label text="Имя" X="152" Y="64"/>
+				<control field="Имя" X="226" Y="64" anchor="left,top,right" width="232"/>
+				<label text="Отчество" X="152" Y="90"/>
+				<control field="Отчество" X="226" Y="90" anchor="left,top,right" width="232"/>
+				<control field="Фото" X="12" Y="12" width="134" height="134"/>
+			</controls>
+		</form>
+	</forms>
+</class>
